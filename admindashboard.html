@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./Css/adminboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+     <div class=”menu-btn”>
+        <i class=”fas fa-bars”></i>
+     </div>
+
+    <div class=”side-bar”>
+        <header>
+            <div class=”close-btn”>
+                <i class=”fas fa-times”></i>
+            </div>
+            <img src=”image.jpg” alt=””>
+            <h1>xFile Admin</h1>
+        </header>
+    </div>
+
+
+<div class=”menu”>
+  <div class=”item”><a href=”#”><i class=”fas fa-desktop”></i>Dashboard</a></div>
+  <div class=”item”><a class=”sub-btn”><i class=”fas fa-table”></i>Users<i class=”fas fa-angle-right dropdown”></i></a>
+    <div class=”sub-menu”>
+       <a href=”#” class=”sub-item”>Add Admin</a>
+       <a href=”#” class=”sub-item”>Add Staff</a>
+    </div>
+  </div>
+  <div class=”item”><a href=”#”>
+    <i class=”fas fa-th”></i>Forms</a></div>
+  <div class=”item”>
+    <a class=”sub-btn”><i class=”fas fa-cogs”></i>Settings<i class=”fas fa-angle-right dropdown”></i></a>
+    <div class=”sub-menu”>
+       <a href=”#” class=”sub-item”>Sub Item 01</a>
+       <a href=”#” class=”sub-item”>Sub Item 02</a>
+    </div>
+  </div>
+  <div class=”item”><a href=”#”><i class=”fas fa-info-circle”></i>About</a></div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+     $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass(rotate);
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css('visibility' , 'hidden');
+     });
+     //Active cancel button
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css('visibility', 'visible');
+     });
+   });
+
+</script>
+</body>
+</html>
