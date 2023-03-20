@@ -4,7 +4,7 @@
   }
   body {
     width: 100%;
-    background-image: url(./assets/files.jpeg);
+    background-image: url(./aboutpicone.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -111,12 +111,12 @@
     position:relative;
   }
 .about-img{
-  height: 400px;
+  height: 250px;
   width: 600px;
 }
 .row{
   margin-top: 60px;
-  padding: 15px;
+  padding-top: 15px;
 }
 .para{
   font-size: 35px;
