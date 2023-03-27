@@ -18,7 +18,7 @@
     <div class="main">
     <h1>WELCOME TO ADMIN FORM</h1>
        <div class="form">
-          <form action="admin_login_handler.php" method="post">
+          <form action="admin_login_handler.php" method="POST">
             <h2>LOGIN HERE</h2>
             <input type="text" name="Username" placeholder="Enter Username Here" required>
             <input type="password" name="Password" placeholder="Enter Password Here" required>
